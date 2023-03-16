@@ -1,0 +1,18 @@
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  height: 46px;
+  width: 800px;
+  color: #FFFFFF;
+}
+
+.main {
+  height: 2118px;
+  width: 100%;
+}
+.main .logo {
+  height: 60px;
+  width: 130px;
+}/*# sourceMappingURL=main.css.map */
