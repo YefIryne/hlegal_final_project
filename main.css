@@ -1,4 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Montserrat Bold;
+  src: url(./fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat Regular;
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+.symbol {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .title {
+  font-family: Montserrat Bold;
   font-size: 38px;
   font-weight: 700;
   line-height: 46px;
@@ -11,6 +32,7 @@
 .main {
   height: 2118px;
   width: 100%;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 .main .logo {
   height: 60px;
