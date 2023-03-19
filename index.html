@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.css" />
     <!-- <link rel="apple-touch-icon" sizes="180/180" href="" />
     <link rel="icon" type="image/png" sizes="32/32" href="" />
     <link rel="icon" type="image/png" sizes="16/16" href="" />
@@ -14,43 +14,58 @@
   <body>
     <main class="main">
       <header class="header">
-        <div class="logo">
-          <a href="./index.html"
-            ><img src="./images/desctopHD/Logo.svg" alt="Logo"
-          /></a>
-        </div>
-        <div class="burger"></div>
-        <div class="header_rightside">
-          <ul>
-            <li>
-              <a class="" href="/">УК</a>
-              <a class="" href="/">РУ</a>
-              <a class="" href="/">EN</a>
-            </li>
-            <li></li>
-            <li>Kyiv, Mechnikova str, 14/1</li>
-            <li></li>
-            <li><a href="tel:0800 211 927" class="">0800 211 927</a></li>
-            <li></li>
-            <li>
-              <a href="">
-                <svg width="24" viewBox="0 0 24 24"></svg>
-              </a>
-            </li>
-          </ul>
-          <nav>
-            <a href="">about us</a>
-            <a href="">services</a>
-            <a href="">team</a>
-            <a href="">publications</a>
-            <a href="">contact</a>
-          </nav>
+        <div class="container flex-container">
+          <div class="header__wrapper">
+            <div class="header__logo">
+              <a href="./index.html"
+                ><img src="./images/desctopHD/Logo.svg" alt="Logo"
+              /></a>
+            </div>
+            <div class="burger">
+              <a href="./burger.html"
+                ><img
+                  src="./images/mobile/menu_FILL0_wght400_GRAD0_opsz48.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="header_rightside">
+              <ul class="header__info">
+                <li>
+                  <a class="header__info__link" href="/">УК</a>
+                  <a class="header__info__link" href="/">РУ</a>
+                  <a class="header__info__link" href="/">EN</a>
+                </li>
+                <li class="dot-separator header-separator"></li>
+                <li class="display">Kyiv, Mechnikova str, 14/1</li>
+                <li class="dot-separator header-separator"></li>
+                <li><a href="tel:0800 211 927" class="">0800 211 927</a></li>
+                <li class="dot-separator header-separator"></li>
+                <li>
+                  <a href="">
+                    <img src="./images/desctopSD/Facebook-Header.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+              <nav class="header__nav">
+                <a href="">about us</a>
+                <a href="">services</a>
+                <a href="">team</a>
+                <a href="">publications</a>
+                <a href="">contact</a>
+              </nav>
+            </div>
+          </div>
         </div>
       </header>
+
       <div class="title-block">
-        <img class="title-block__symbol" src="./images/desctopHD/Symbol.png" alt="">
+        <img
+          class="title-block__symbol"
+          src="./images/desctopHD/Symbol.png"
+          alt=""
+        />
         <h1 class="title-block__title">you legal solutions provider</h1>
-        <a href=""><img src="./images/desctopHD/Scroll.svg" alt=""></a>
+        <a href=""><img src="./images/desctopHD/Scroll.svg" alt="" /></a>
       </div>
       <div>
         <div>
@@ -162,7 +177,7 @@
     </div>
     <section class="clients">
       <h4>They already trust us</h4>
-      <div>
+      <div class="clients__grid">
         <img src="./images/desctopHD/hillel.png" alt="" />
         <img src="./images/desctopHD/wannabiz.png" alt="" />
         <img src="./images/desctopHD/tapgerine.png" alt="" />
