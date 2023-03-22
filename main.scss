@@ -443,6 +443,80 @@ img {
         }
     }
 }
+.recomended {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 60px 0px;
+    gap: 30px;
+    background: #F5F5FA;
+    .recomended__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        .recomended__heading__title {
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: Montserrat Bold;
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+    .recomended__items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        .recomended__items__wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 30px;
+            .recomended__item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                border-radius: 8px;
+                width: 420px;
+                height: 450px;
+                background: #FFFFFF;
+                .recomended__item__content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 30px;
+                    gap: 15px;
+                    .recomended__item__title {
+                        font-family: Montserrat Bold;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #24A3FF;
+                    }
+                    .recomended__item__date {
+                        font-family: Montserrat Bold;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        color: #B3B3BA;
+                    }
+                    .recomended__item__text {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
 .footer {
     padding: 30px 60px 30px;
     font-weight: 700;
