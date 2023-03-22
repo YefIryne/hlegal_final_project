@@ -26,7 +26,7 @@
             </div>
             <div class="header__logo_rightside">
               <ul class="header__info">
-                <li>
+                <li class="header__info__links">
                   <a
                     class="header__info__link header__info__link__hover"
                     href="/"
@@ -40,9 +40,9 @@
                   <a class="header__info__link active" href="/">EN</a>
                 </li>
                 <li class="dot-separator header-separator"></li>
-                <li class="display">Kyiv, Mechnikova str, 14/1</li>
+                <li class="header__address">Kyiv, Mechnikova str, 14/1</li>
                 <li class="dot-separator header-separator"></li>
-                <li><a href="tel:0800 211 927" class="">0800 211 927</a></li>
+                <li><a href="tel:0800 211 927" class="header-tel">0800 211 927</a></li>
                 <li class="dot-separator header-separator"></li>
                 <li>
                   <a href="">
@@ -207,7 +207,14 @@
           </figcaption>
         </div>
       </div>
-      <div class="paginator"></div>
+      <div class="slider">
+        <input type="radio" name="radio" id="radio1" checked>
+        <input type="radio" name="radio" id="radio2">
+        <input type="radio" name="radio" id="radio3">
+        <label for="radio1" class="bar"></label>
+        <label for="radio2" class="bar"></label>
+        <label for="radio3" class="bar"></label>
+      </div>
     </div>
     <section class="clients">
       <h4 class="clients__title">They already trust us</h4>
@@ -299,7 +306,7 @@
           <div class="footer__info">
             <ul class="footer__info-address">
               <li class="footer__address">Kyiv, Mechnikova str, 14/1</li>
-              <li></li>
+              <li class="footer-separator"></li>
               <li class="map">
                 <a
                   href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.436795,30.5305163,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a!8m2!3d50.436795!4d30.532705!16s%2Fg%2F11c5mrd800"
@@ -314,9 +321,9 @@
                   <img src="./images/desctopHD/Facebook-Footer.png" alt="" />
                 </a>
               </li>
-              <li></li>
-              <li><a href="tel:0800 211 927" class="">0800 211 927</a></li>
-              <li></li>
+              <li class="footer-separator"></li>
+              <li><a href="tel:0800 211 927" class="footer-tel">0800 211 927</a></li>
+              <li class="footer-separator"></li>
               <li>
                 <a href="email:contact@forstudy.space"
                   >contact@forstudy.space</a
