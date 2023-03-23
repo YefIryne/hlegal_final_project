@@ -41,7 +41,7 @@ img {
 }
 @media screen and (max-width: 375px) {
   .main {
-    height: 3344px;
+    min-height: 3344px;
     width: 100%;
     padding: 0px 0px 60px 0px;
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
