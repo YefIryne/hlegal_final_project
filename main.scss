@@ -39,17 +39,107 @@ img {
     .services__container__item {
         max-width: 493.33px;
     }
+    .team {
+        width: 1600px;
+        height: 298px;
+    }
+    .labels {
+        margin-bottom: 60px;
+        .labels__wrapper {
+            border-radius: 12px;
+        }
+    }
+    .recomended__item {
+        width: 513.33px;
+    }
 }
-@media (max-width:1440px){
-
+@media screen and (max-width:1024px){
+    .services__container__item {
+        width: 261.33px;
+    }
+    .labels__icons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .team__block {
+        width: 904px;
+        height: 528px;
+    }
+    .recomended__item {
+        width: 281.33px;
+        height: 556px; 
+    }
 }
-@media (max-width:1024px){
-
-}
-@media (max-width:768px){
-
+@media screen and (max-width:768px){
+    .main-and-shadow {
+        height: 2947px;
+        width: 100%;
+    }
+    .header {
+        background-image: url(./images/tabletSD/Symbol.png);
+    }
+    .header__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px 60px 0px;
+        gap: 30px;
+        .header__info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px; 
+            gap: 6px;
+        }
+        .header__nav {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 15px;
+        }
+    }
+    .consistent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        .consistent__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 60px;
+            .consistent__wrapper__title {
+                display: flex;
+                padding-bottom: 60px;
+            }
+            .consistent__wrapper__content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+            }
+        }
+    }
+    .team__block {
+        width: 648px;
+        height: 936px;
+    }
+    .labels__icons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .recomended__item {
+        width: 309px;
+        height: 514px;
+    }
+    .recomended__item-last {
+        width: 648px;
+        height: 388px;
+    }
 }
 @media screen and (max-width:375px){
+    .labels__icons {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .main-and-shadow { 
         height: 3364px;
         width: 100%;
@@ -337,6 +427,7 @@ img {
         gap: 60px;
         margin-top: 60px;
         margin-bottom: 60px;
+        width: 100%;
         .services__title__block {
             display: flex;
             flex-direction: column;
@@ -393,7 +484,6 @@ img {
         &__first {
             height: 10px;
             width: 97.2%;
-            // position: absolute;
             left: 20px;
             top: 0%;
             right: 20px;
@@ -415,7 +505,7 @@ img {
 .title-with-arrow {
     display: flex;
     gap: 5.5px;
-    .title-with-arrow__title {
+    &__title {
         font-family: Montserrat Bold;
         font-size: 14px;
         font-weight: 700;
@@ -486,32 +576,77 @@ img {
         // transform: all 0.5 ease;
     }
 }
-.clients {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .clients__title {
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #323264;
-        height: 17px;
-        width: 209px;
-        margin-bottom: 30px;
-    }
-    .clients__grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        height: 360px;
-        max-width: 1440px;
-        .clients__grid__icon {
-            width: calc(100%/4)
-            // height: 120px;
-            // width: 360px;
+.labels {
+    padding-top: 60px;
+    width: 100%;
+    .labels__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        .labels__title {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #323264;
+            height: 17px;
+            width: 209px;
+        }
+        .labels__icons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            .labels__icons__box {
+                height: 120px;
+                width: 360px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .labels__icons__box img{
+                    height: 95px;
+                    width: 217px;
+                }
+            }
+            .icon-hillel {
+                background: #1C4280;
+            }
+            .icon-wannabiz {
+                background: #143646;
+            }
+            .icon-tapgerine {
+                background: #F48B30;
+            }
+            .icon-3dlook{
+                background: #9E4DC3;
+            }
+            .icon-orangear{
+                background: #FD9339;
+            }
+            .icon-adtelligent {
+                background: #E2E2E4;
+            }
+            .icon-clickky {
+                background: #C71C36;
+            }
+            .icon-eco-leasing {
+                background: #DCF3F9;
+            }
+            .icon-infatek {
+                background: #EAEAEA;
+            }
+            .icon-city {
+                background: #282240;
+            }
+            .icon-artprint {
+                background: #1D4568;
+            }
+            .icon-ultimatecard {
+                background: #000000;
+            }
         }
     }
+    
 }
 .recomended {
     display: flex;
@@ -520,6 +655,7 @@ img {
     padding: 30px 60px 0px;
     gap: 30px;
     background: #F5F5FA;
+    width: 100%;
     .recomended__heading {
         display: flex;
         flex-direction: column;
