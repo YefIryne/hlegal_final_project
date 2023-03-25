@@ -27,8 +27,73 @@ img {
   background-color: #F0145A;
 }
 
-.active__link {
+.active__link:hover {
   color: #F0145A;
+}
+
+.consistent-button {
+  display: inline-block;
+}
+
+.consistent-button img {
+  transition: all 0.1s ease;
+}
+
+.consistent-button:hover img {
+  opacity: 0;
+}
+
+.consistent-button:hover {
+  background: url(./images/desctopSD/Scroll\ hover.svg) no-repeat 50% 50%;
+}
+
+.footer-facebook {
+  display: inline-block;
+}
+
+.footer-facebook img {
+  transition: all 0.1s ease;
+}
+
+.footer-facebook:hover img {
+  opacity: 0;
+}
+
+.footer-facebook:hover {
+  background: url(./images/desctopSD/Facebook-Footer\ hover.svg) no-repeat 50% 50%;
+}
+
+.header-facebook {
+  display: inline-block;
+}
+
+.header-facebook img {
+  transition: all 0.1s ease;
+}
+
+.header-facebook:hover img {
+  opacity: 0;
+}
+
+.header-facebook:hover {
+  background: url(./images/desctopSD/Facebook-Header\ hover.svg) no-repeat 50% 50%;
+}
+
+.arrow {
+  display: inline-block;
+}
+
+.arrow img {
+  transition: all 0.1s ease;
+}
+
+.arrow:hover img {
+  opacity: 0;
+}
+
+.arrow:hover {
+  background: url(./images/desctopSD/red-arrow.svg) no-repeat 50% 50%;
+  background-position: right;
 }
 
 @font-face {
@@ -424,6 +489,10 @@ img {
   line-height: 20px;
   letter-spacing: 0em;
   color: #FFFFFF;
+}
+.main-and-shadow .main .header .header__wrapper .header_rightside .header__nav .header__nav__link:hover {
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: 3px;
 }
 .main-and-shadow .main .header .header__title {
   font-family: Montserrat Bold;
@@ -846,6 +915,8 @@ img {
   font-size: 14px;
   line-height: 22px;
   color: #000000;
+  border-top: 4px solid #E6E6F0;
+  padding-top: 15px;
 }
 
 .footer {
@@ -1019,6 +1090,24 @@ img {
   line-height: 20px;
   letter-spacing: 0em;
   color: #FFFFFF;
+}
+.main-and-shadow-services .main-services .header-services .header_rightside-services .header__nav-services .header__nav__link-services:hover {
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: 3px;
+}
+.main-and-shadow-services .main-services .header-services .header_rightside-services .header__nav-services .header__nav__link-services-checked {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  font-family: Montserrat Bold;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #F0145A;
+  border-bottom: 2px solid #F0145A;
+  padding-bottom: 3px;
 }
 .main-and-shadow-services .services-services {
   display: flex;
