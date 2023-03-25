@@ -655,14 +655,49 @@ img {
   align-items: flex-start;
   gap: 6px;
 }
-.team .bar {
+.team .slider {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+  width: 78px;
+  height: 16px;
+}
+.team input[name=radio] {
+  display: none;
+}
+.team .radio {
+  position: relative;
+}
+.team .bar::before {
+  content: "";
+  display: block;
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  margin-right: 15px;
   cursor: pointer;
   background: #24A3FF;
-  opacity: 0, 2;
+  opacity: 0.2;
+  transition: background 0.1s linear;
+}
+.team .bar::after {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opasity 0.1s linear;
+  position: absolute;
+  left: 31px;
+  top: 0px;
+  z-index: 2;
+}
+.team .radio:checked + .bar::before {
+  border-color: #24A3FF;
+}
+.team .radio:checked + .bar::after {
+  opacity: 1;
 }
 
 .labels {
