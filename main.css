@@ -658,7 +658,7 @@ img {
 .team .bar {
   height: 16px;
   width: 16px;
-  border-radius: 100%;
+  border-radius: 50%;
   margin-right: 15px;
   cursor: pointer;
   background: #24A3FF;
@@ -1066,4 +1066,123 @@ img {
   bottom: 0%;
   border-radius: 0px 0px 12px 12px;
   background: #E7E7F2;
+}
+
+@media screen and (max-width: 1920px) {
+  .services__container__item-services {
+    max-width: 493.33px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .services__container__item-services {
+    width: 261.33px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-and-shadow-services {
+    height: 2947px;
+    width: 100%;
+  }
+  .header__wrapper-services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 60px 0px;
+    gap: 30px;
+  }
+  .header__wrapper-services .header__info-services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+  }
+  .header__wrapper-services .header__nav-services {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main-and-shadow-services {
+    height: 3364px;
+    width: 100%;
+  }
+  .main-and-shadow-services .main-services {
+    height: 3344px;
+    width: 100%;
+    padding: 0px 0px 60px 0px;
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 60px;
+    gap: 30px;
+  }
+  .main-and-shadow-services .main-services .header-services {
+    height: 600px;
+  }
+  .main-and-shadow-services .main-services .header-services .header__wrapper-services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+  }
+  .main-and-shadow-services .main-services .header-services .header__wrapper-services .header__logo-services {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 0px 10px;
+    gap: 4px;
+  }
+  .main-and-shadow-services .main-services .header-services .header__wrapper-services .header_rightside-services {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .main-and-shadow-services .main-services .header-services .header__wrapper-services .header_rightside-services .header__info-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 6px;
+    background: rgba(245, 245, 250, 0.2);
+  }
+  .main-and-shadow-services .main-services .header-services .header__wrapper-services .header_rightside-services .header__info-services .header__info__links-services {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .main-and-shadow-services .main-services .header-services .header__wrapper-services .header_rightside-services .header__info-services .header__info__links-services .header__info__link-services {
+    height: 25px;
+    width: 33px;
+    border-radius: 8px;
+    padding: 5px 7px 5px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+  }
+  .main-and-shadow-services .main-services .header-services .header__wrapper-services .header_rightside-services .header__info-services .header__info__links-services .header__info__link__hover-services:hover {
+    height: 25px;
+    width: 33px;
+    border-radius: 8px;
+    padding: 5px 7px 5px 7px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .main-and-shadow-services .main-services .header-services .header__wrapper-services .header_rightside-services .header__info-services .header__info__links-services .header__address-services {
+    display: none;
+  }
+  .main-and-shadow-services .main-services .header-services .header__wrapper-services .header_rightside-services .header__info-services .header__info__links-services .header-tel-services {
+    font-family: Montserrat Bold;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
 }/*# sourceMappingURL=main.css.map */
