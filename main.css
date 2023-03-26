@@ -22,6 +22,14 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: Montserrat Bold;
+  src: url(./fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat Regular;
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
 .active {
   color: #FFFFFF;
   background-color: #F0145A;
@@ -96,14 +104,6 @@ img {
   background-position: right;
 }
 
-@font-face {
-  font-family: Montserrat Bold;
-  src: url(./fonts/Montserrat-Bold.ttf);
-}
-@font-face {
-  font-family: Montserrat Regular;
-  src: url(./fonts/Montserrat-Regular.ttf);
-}
 @media screen and (max-width: 1920px) {
   .header {
     background-image: url(./images/desctopHD/Symbol.png);
@@ -472,6 +472,9 @@ img {
   line-height: 20px;
   color: #FFFFFF;
 }
+.main-and-shadow .main .header .header__wrapper .header_rightside .header-tel:hover {
+  color: #F0145A;
+}
 .main-and-shadow .main .header .header__wrapper .header_rightside .header__nav {
   display: flex;
   flex-direction: row;
@@ -533,6 +536,28 @@ img {
   padding-right: 60px;
   border-right: 4px solid rgba(255, 255, 255, 0.3019607843);
 }
+.main-and-shadow .consistent .consistent__wrapper .consistent__wrapper__title .consistent__wrapper__title-main {
+  font-family: Montserrat Bold;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.main-and-shadow .consistent .consistent__wrapper .consistent__wrapper__title .consistent__wrapper__title-secondary {
+  font-family: Montserrat Bold;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  color: #B3B3BA;
+}
+.main-and-shadow .consistent .consistent__wrapper .consistent__wrapper__title .consistent__wrapper__title-secondary:hover {
+  color: #F0145A;
+}
 .main-and-shadow .consistent .consistent__wrapper .consistent__wrapper__content {
   display: flex;
   flex-direction: column;
@@ -555,25 +580,6 @@ img {
   line-height: 30px;
   letter-spacing: 0em;
   color: #FFFFFF;
-}
-.main-and-shadow .consistent .consistent__title {
-  font-family: Montserrat Bold;
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 46px;
-  letter-spacing: 0em;
-  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.main-and-shadow .consistent .consistent__title-secondary {
-  font-family: Montserrat Bold;
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 46px;
-  letter-spacing: 0em;
-  color: #B3B3BA;
 }
 .main-and-shadow .services {
   display: flex;
@@ -624,6 +630,9 @@ img {
   line-height: 27px;
   letter-spacing: 0em;
   color: #24A3FF;
+}
+.main-and-shadow .services .services__container .services__container__item .services__container__title:hover {
+  color: #F0145A;
 }
 .main-and-shadow .services .services__container .services__container__item .services__container__text {
   font-size: 16px;
@@ -724,48 +733,48 @@ img {
   align-items: flex-start;
   gap: 6px;
 }
-.team .slider {
+.team .radio__wrapper {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  gap: 15px;
-  width: 78px;
-  height: 16px;
+  gap: 30px;
 }
-.team input[name=radio] {
-  display: none;
-}
-.team .radio {
+.team .radio__wrapper .radio {
   position: relative;
 }
-.team .bar::before {
-  content: "";
-  display: block;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  cursor: pointer;
-  background: #24A3FF;
-  opacity: 0.2;
-  transition: background 0.1s linear;
-}
-.team .bar::after {
-  content: "";
-  display: block;
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  opacity: 0;
-  transition: opasity 0.1s linear;
+.team .radio__wrapper .radio .radio__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   position: absolute;
-  left: 31px;
-  top: 0px;
+}
+.team .radio__wrapper .radio .radio__label {
+  cursor: pointer;
+}
+.team .radio__wrapper .radio .radio__label::before {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #24A3FF;
+  opacity: 0.2;
+}
+.team .radio__wrapper .radio .radio__label::after {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #24A3FF;
+  opacity: 0;
+  position: absolute;
   z-index: 2;
 }
-.team .radio:checked + .bar::before {
-  border-color: #24A3FF;
-}
-.team .radio:checked + .bar::after {
+.team .radio__wrapper .radio .radio__input:checked + .radio__label::after {
   opacity: 1;
 }
 
@@ -901,6 +910,9 @@ img {
   line-height: 20px;
   color: #24A3FF;
 }
+.recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__content .recomended__item__title:hover {
+  color: #F0145A;
+}
 .recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__content .recomended__item__date {
   font-family: Montserrat Bold;
   font-weight: 700;
@@ -959,6 +971,9 @@ img {
   text-transform: uppercase;
   color: #24A3FF;
 }
+.footer .footer__wrapper .footer__info .footer__info-address .map:hover {
+  color: #F0145A;
+}
 .footer .footer__wrapper .footer__info .footer__contacts {
   display: flex;
   flex-direction: row;
@@ -972,12 +987,18 @@ img {
   line-height: 20px;
   color: #46466E;
 }
+.footer .footer__wrapper .footer__info .footer__contacts .footer-tel:hover {
+  color: #F0145A;
+}
 .footer .footer__wrapper .footer__info .footer__contacts .footer-email {
   font-family: Montserrat Bold;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #24A3FF;
+}
+.footer .footer__wrapper .footer__info .footer__contacts .footer-email:hover {
+  color: #F0145A;
 }
 .footer .footer__wrapper .footer__wrapper-privacy {
   font-weight: 400;
@@ -1073,6 +1094,9 @@ img {
   line-height: 20px;
   color: #FFFFFF;
 }
+.main-and-shadow-services .main-services .header-services .header_rightside-services .header-tel-services:hover {
+  color: #F0145A;
+}
 .main-and-shadow-services .main-services .header-services .header_rightside-services .header__nav-services {
   display: flex;
   flex-direction: row;
@@ -1158,6 +1182,9 @@ img {
   line-height: 27px;
   letter-spacing: 0em;
   color: #24A3FF;
+}
+.main-and-shadow-services .services-services .services__container-services .services__container__item-services .services__container__title-services:hover {
+  color: #F0145A;
 }
 .main-and-shadow-services .services-services .services__container-services .services__container__item-services .services__container__text-services {
   font-size: 16px;
