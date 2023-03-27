@@ -208,6 +208,26 @@ img {
                         }
                     }   
                 }
+                .header__logo-tabletSD {
+                    display: none;
+                }
+                @media screen and (max-width:768px) {
+                    .header__logo-tabletSD {
+                        display: block;
+                    }
+                    .header__logo {
+                        display: none;
+                    }
+                }
+            }
+            @media screen and (max-width:768px) {
+                .header__wrapper {
+                    // display: flex;
+                    flex-direction: column;
+                    .header_rightside {
+                        align-items: start;
+                    }
+                }
             }
             .header__title {
                 font-family: Montserrat Bold;
@@ -418,7 +438,7 @@ img {
         .team__block__img-tabletHD {
             display: none;
         }
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width:1200px) {
             .team__block__img-tabletHD {
                 display: block;
             }
@@ -535,7 +555,7 @@ img {
                     max-width: 217px;
                 }
             }
-            @media screen and (max-width:1024px){
+            @media screen and (max-width:1200px){
                 .labels__icons__box {
                     width: 256px;
                 }
@@ -634,7 +654,7 @@ img {
                 .recomended__item__image-tabletHD {
                     display: none;
                 }
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width:1200px) {
                     .recomended__item__image-tabletHD {
                         display: block;
                     }
@@ -677,7 +697,7 @@ img {
                     }
                 }
             }
-            @media screen and (max-width:1024px) {
+            @media screen and (max-width:1200px) {
                 .recomended__item {
                     width: 281.33px;
                     height: 556px; 
@@ -782,7 +802,7 @@ img {
 //         max-width: 513.33px;
 //     }
 // }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1200px){
     .consistent__wrapper {
         max-width: 904px;
     }
@@ -792,42 +812,18 @@ img {
     .services__container__item {
         max-width: 261.33px;
     }
-    // .labels__icons {
-    //     grid-template-columns: repeat(3, 1fr);
-    // }
     .team__block {
         width: 904px;
         max-height: 528px;
     }
 }
 @media screen and (max-width:768px){
-    .main-and-shadow {
-        height: 2947px;
-        width: 100%;
-    }
+    // .main-and-shadow {
+    //     height: 2947px;
+    //     width: 100%;
+    // }
     .header {
         background-image: url(./images/tabletSD/Symbol.png);
-    }
-    .header__wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 50px 60px 0px;
-        gap: 30px;
-        .header__info {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 0px; 
-            gap: 6px;
-        }
-        .header__nav {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 15px;
-        }
     }
     .consistent {
         display: flex;
@@ -859,8 +855,11 @@ img {
         align-items: flex-start;
     }
     .labels__icons {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
+    // .labels__icons {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
     .recomended__item {
         max-width: 309px;
         max-height: 514px;
