@@ -121,7 +121,12 @@ img {
     border-radius: 8px;
   }
 }
+.main-and-shadow {
+  min-height: 100%;
+}
 .main-and-shadow .main {
+  min-height: 100%;
+  overflow: hidden;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
 }
@@ -416,6 +421,17 @@ img {
   border-radius: 12px;
   background: #F5F5FA;
 }
+.team .team__block .team__block__img-tabletHD {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .team .team__block .team__block__img-tabletHD {
+    display: block;
+  }
+  .team .team__block .team__block__img {
+    display: none;
+  }
+}
 .team .team__block .team__block__wrapper {
   display: flex;
   flex-direction: column;
@@ -525,7 +541,15 @@ img {
 }
 .labels .labels__wrapper .labels__icons .labels__icons__box .labels__icons__box img {
   height: 95px;
-  width: 217px;
+  max-width: 217px;
+}
+@media screen and (max-width: 1024px) {
+  .labels .labels__wrapper .labels__icons .labels__icons__box {
+    width: 256px;
+  }
+  .labels .labels__wrapper .labels__icons .labels__icons__box img {
+    max-width: 199px;
+  }
 }
 .labels .labels__wrapper .labels__icons .icon-hillel {
   background: #1C4280;
@@ -574,7 +598,6 @@ img {
   align-items: flex-start;
   padding: 30px 60px 0px;
   gap: 30px;
-  max-width: 1320px;
 }
 .recomended .recomended__heading {
   display: flex;
@@ -613,6 +636,20 @@ img {
   height: 450px;
   background: #FFFFFF;
 }
+.recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__image {
+  display: block;
+}
+.recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__image-tabletHD {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__image-tabletHD {
+    display: block;
+  }
+  .recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__image {
+    display: none;
+  }
+}
 .recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__content {
   display: flex;
   flex-direction: column;
@@ -647,6 +684,12 @@ img {
   border-top: 4px solid #E6E6F0;
   padding-top: 15px;
 }
+@media screen and (max-width: 1024px) {
+  .recomended .recomended__items .recomended__items__wrapper .recomended__item {
+    width: 281.33px;
+    height: 556px;
+  }
+}
 
 .footer {
   padding: 30px 60px 30px;
@@ -657,7 +700,6 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 511px;
   border-top: 2px solid #E6E6F0;
   padding-top: 30px;
 }
@@ -734,16 +776,9 @@ img {
   .services__container__item {
     max-width: 261.33px;
   }
-  .labels__icons {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .team__block {
     width: 904px;
     max-height: 528px;
-  }
-  .recomended__item {
-    max-width: 281.33px;
-    max-height: 556px;
   }
 }
 @media screen and (max-width: 768px) {
