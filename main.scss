@@ -1003,7 +1003,10 @@ img {
         display: none;
     }
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:480px){
+    .header {
+        background-image: url(./images/mobile/Symbol.png);
+    }
     .burger {
         width: 32px;
         height: 32px;
