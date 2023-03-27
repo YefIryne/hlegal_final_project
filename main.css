@@ -222,6 +222,25 @@ img {
   border-bottom: 2px solid #FFFFFF;
   padding-bottom: 3px;
 }
+.main-and-shadow .main .header .header__wrapper .header__logo-tabletSD {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .main-and-shadow .main .header .header__wrapper .header__logo-tabletSD {
+    display: block;
+  }
+  .main-and-shadow .main .header .header__wrapper .header__logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-and-shadow .main .header .header__wrapper {
+    flex-direction: column;
+  }
+  .main-and-shadow .main .header .header__wrapper .header_rightside {
+    align-items: start;
+  }
+}
 .main-and-shadow .main .header .header__title {
   font-family: Montserrat Bold;
   font-size: 38px;
@@ -424,7 +443,7 @@ img {
 .team .team__block .team__block__img-tabletHD {
   display: none;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .team .team__block .team__block__img-tabletHD {
     display: block;
   }
@@ -543,7 +562,7 @@ img {
   height: 95px;
   max-width: 217px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .labels .labels__wrapper .labels__icons .labels__icons__box {
     width: 256px;
   }
@@ -642,7 +661,7 @@ img {
 .recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__image-tabletHD {
   display: none;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__image-tabletHD {
     display: block;
   }
@@ -684,7 +703,7 @@ img {
   border-top: 4px solid #E6E6F0;
   padding-top: 15px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .recomended .recomended__items .recomended__items__wrapper .recomended__item {
     width: 281.33px;
     height: 556px;
@@ -766,7 +785,7 @@ img {
   color: #B3B3BA;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .consistent__wrapper {
     max-width: 904px;
   }
@@ -782,33 +801,8 @@ img {
   }
 }
 @media screen and (max-width: 768px) {
-  .main-and-shadow {
-    height: 2947px;
-    width: 100%;
-  }
   .header {
     background-image: url(./images/tabletSD/Symbol.png);
-  }
-  .header__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 50px 60px 0px;
-    gap: 30px;
-  }
-  .header__wrapper .header__info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 6px;
-  }
-  .header__wrapper .header__nav {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 15px;
   }
   .consistent {
     display: flex;
@@ -840,7 +834,7 @@ img {
     align-items: flex-start;
   }
   .labels__icons {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .recomended__item {
     max-width: 309px;
