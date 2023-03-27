@@ -108,19 +108,24 @@ img {
   display: none;
 }
 
-.main-and-shadow {
-  min-height: 2138px;
-  width: 100%;
+@media screen and (max-width: 375px) {
+  .burger {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-self: flex-start;
+    margin-left: auto;
+  }
+  .burger:hover {
+    background: #e6e6f0;
+    border-radius: 8px;
+  }
 }
 .main-and-shadow .main {
-  min-height: 2118px;
-  width: 100%;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
 }
 .main-and-shadow .main .header {
-  height: 800px;
-  width: 100%;
   background-image: url(./images/desctopSD/Symbol.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -135,12 +140,9 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   padding: 50px 60px 0px;
-  gap: 381px;
   height: 116px;
 }
 .main-and-shadow .main .header .header__wrapper .header__logo {
-  height: 60px;
-  width: 130px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -164,8 +166,6 @@ img {
   align-items: flex-start;
 }
 .main-and-shadow .main .header .header__wrapper .header_rightside .header__info .header__info__links .header__info__link {
-  height: 25px;
-  width: 33px;
   border-radius: 8px;
   padding: 5px 7px 5px 7px;
   font-size: 12px;
@@ -175,8 +175,6 @@ img {
   color: #FFFFFF;
 }
 .main-and-shadow .main .header .header__wrapper .header_rightside .header__info .header__info__links .header__info__link__hover:hover {
-  height: 25px;
-  width: 33px;
   border-radius: 8px;
   padding: 5px 7px 5px 7px;
   background: rgba(255, 255, 255, 0.2);
@@ -295,8 +293,7 @@ img {
   color: #FFFFFF;
 }
 .main-and-shadow .consistent .consistent__wrapper .consistent__wrapper__content .consistent__wrapper__content__text {
-  height: 150px;
-  width: 581px;
+  max-width: 581px;
   font-size: 19px;
   font-weight: 400;
   line-height: 30px;
@@ -311,7 +308,7 @@ img {
   gap: 60px;
   margin-top: 60px;
   margin-bottom: 60px;
-  width: 100%;
+  max-width: 1320px;
 }
 .main-and-shadow .services .services__title__block {
   display: flex;
@@ -334,7 +331,6 @@ img {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
   gap: 60px;
 }
 .main-and-shadow .services .services__container .services__container__item {
@@ -342,7 +338,6 @@ img {
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  max-width: 400px;
   flex-grow: 1;
 }
 .main-and-shadow .services .services__container .services__container__item .services__container__title {
@@ -729,28 +724,13 @@ img {
   color: #B3B3BA;
 }
 
-@media screen and (max-width: 1920px) {
-  .header {
-    background-image: url(./images/desctopHD/Symbol.png);
-  }
-  .services__container__item {
-    max-width: 493.33px;
-  }
-  .team {
-    max-width: 1600px;
-    max-height: 298px;
-  }
-  .labels {
-    margin-bottom: 60px;
-  }
-  .labels .labels__wrapper {
-    border-radius: 12px;
-  }
-  .recomended__item {
-    max-width: 513.33px;
-  }
-}
 @media screen and (max-width: 1024px) {
+  .consistent__wrapper {
+    max-width: 904px;
+  }
+  .consistent__wrapper__content {
+    max-width: 405px;
+  }
   .services__container__item {
     max-width: 261.33px;
   }
@@ -873,6 +853,8 @@ img {
     padding: 0px;
   }
   .main-and-shadow .main .header .header__wrapper .header__logo {
+    max-height: 60px;
+    max-width: 130px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -900,8 +882,8 @@ img {
     align-items: flex-start;
   }
   .main-and-shadow .main .header .header__wrapper .header_rightside .header__info .header__info__links .header__info__link {
-    height: 25px;
-    width: 33px;
+    max-height: 25px;
+    max-width: 33px;
     border-radius: 8px;
     padding: 5px 7px 5px 7px;
     font-size: 12px;
@@ -911,8 +893,8 @@ img {
     color: #FFFFFF;
   }
   .main-and-shadow .main .header .header__wrapper .header_rightside .header__info .header__info__links .header__info__link__hover:hover {
-    height: 25px;
-    width: 33px;
+    max-height: 25px;
+    max-width: 33px;
     border-radius: 8px;
     padding: 5px 7px 5px 7px;
     background: rgba(255, 255, 255, 0.2);
