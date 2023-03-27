@@ -298,9 +298,23 @@ img {
   line-height: 46px;
   letter-spacing: 0em;
   color: #B3B3BA;
+  max-width: 375px;
 }
 .main-and-shadow .consistent .consistent__wrapper .consistent__wrapper__title .consistent__wrapper__title-secondary:hover {
   color: #F0145A;
+}
+@media screen and (max-width: 768px) {
+  .main-and-shadow .consistent .consistent__wrapper .consistent__wrapper__title {
+    flex-direction: row;
+    padding-right: 0;
+    align-items: flex-start;
+    border-right: none;
+    overflow-x: hidden;
+    max-width: 708px;
+  }
+  .main-and-shadow .consistent .consistent__wrapper .consistent__wrapper__title .consistent__wrapper__title-secondary:last-child {
+    display: none;
+  }
 }
 .main-and-shadow .consistent .consistent__wrapper .consistent__wrapper__content {
   display: flex;
@@ -323,6 +337,24 @@ img {
   line-height: 30px;
   letter-spacing: 0em;
   color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .main-and-shadow .consistent .consistent__wrapper .consistent__wrapper__content {
+    border-top: 4px solid rgba(255, 255, 255, 0.3019607843);
+    padding-top: 60px;
+    max-width: 648px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-and-shadow .consistent .consistent__wrapper {
+    flex-direction: column;
+    max-width: 648px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-and-shadow .consistent {
+    align-items: center;
+  }
 }
 .main-and-shadow .services {
   display: flex;
@@ -433,10 +465,7 @@ img {
 }
 .team .team__block {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  left: 60px;
-  top: 0px;
+  justify-content: flex-start;
   border-radius: 12px;
   background: #F5F5FA;
 }
@@ -448,6 +477,20 @@ img {
     display: block;
   }
   .team .team__block .team__block__img {
+    display: none;
+  }
+}
+.team .team__block .team__block__img-tabletSD {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team .team__block .team__block__img-tabletSD {
+    display: block;
+  }
+  .team .team__block .team__block__img {
+    display: none;
+  }
+  .team .team__block .team__block__img-tabletHD {
     display: none;
   }
 }
@@ -481,6 +524,19 @@ img {
   flex-direction: column;
   align-items: flex-start;
   gap: 6px;
+}
+.team .team__block .team__block__wrapper .author {
+  font-family: Montserrat Bold;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+}
+.team .team__block .team__block__wrapper .who-is-author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #B3B3BA;
 }
 .team .radio__wrapper {
   display: flex;
@@ -570,6 +626,14 @@ img {
     max-width: 199px;
   }
 }
+@media screen and (max-width: 768px) {
+  .labels .labels__wrapper .labels__icons .labels__icons__box {
+    width: 256px;
+  }
+  .labels .labels__wrapper .labels__icons .labels__icons__box img {
+    max-width: 199px;
+  }
+}
 .labels .labels__wrapper .labels__icons .icon-hillel {
   background: #1C4280;
 }
@@ -605,6 +669,11 @@ img {
 }
 .labels .labels__wrapper .labels__icons .icon-ultimatecard {
   background: #000000;
+}
+@media screen and (max-width: 768px) {
+  .labels .labels__wrapper .labels__icons {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .recomended {
@@ -669,6 +738,20 @@ img {
     display: none;
   }
 }
+.recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__image-tabletSD {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__image-tabletSD {
+    display: block;
+  }
+  .recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__image {
+    display: none;
+  }
+  .recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__image-tabletHD {
+    display: none;
+  }
+}
 .recomended .recomended__items .recomended__items__wrapper .recomended__item .recomended__item__content {
   display: flex;
   flex-direction: column;
@@ -707,6 +790,12 @@ img {
   .recomended .recomended__items .recomended__items__wrapper .recomended__item {
     width: 281.33px;
     height: 556px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .recomended .recomended__items .recomended__items__wrapper .recomended__item {
+    width: 309px;
+    height: 514px;
   }
 }
 
@@ -804,37 +893,10 @@ img {
   .header {
     background-image: url(./images/tabletSD/Symbol.png);
   }
-  .consistent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  .consistent .consistent__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 60px;
-  }
-  .consistent .consistent__wrapper .consistent__wrapper__title {
-    display: flex;
-    padding-bottom: 60px;
-  }
-  .consistent .consistent__wrapper .consistent__wrapper__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-  }
   .team__block {
     width: 648px;
     max-height: 936px;
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-  }
-  .labels__icons {
-    grid-template-columns: repeat(3, 1fr);
   }
   .recomended__item {
     max-width: 309px;
