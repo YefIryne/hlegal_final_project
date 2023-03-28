@@ -104,23 +104,6 @@ img {
   background-position: right;
 }
 
-.burger {
-  display: none;
-}
-
-@media screen and (max-width: 480px) {
-  .burger {
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-self: flex-start;
-    margin-left: auto;
-  }
-  .burger:hover {
-    background: #e6e6f0;
-    border-radius: 8px;
-  }
-}
 .main-and-shadow {
   min-height: 100%;
 }
@@ -153,8 +136,27 @@ img {
   align-items: flex-start;
   gap: 4px;
 }
-.main-and-shadow .main .header .header__wrapper .header__logo-mobile {
+.main-and-shadow .main .header .header__wrapper .header__logo__mobile {
   display: none;
+}
+.main-and-shadow .main .header .header__wrapper .header__logo__mobile .burger {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .main-and-shadow .main .header .header__wrapper .header__logo__mobile {
+    display: flex;
+  }
+  .main-and-shadow .main .header .header__wrapper .header__logo__mobile .burger {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: flex-end;
+    order: 2;
+  }
+  .main-and-shadow .main .header .header__wrapper .header__logo__mobile .burger:hover {
+    background: #e6e6f0;
+    border-radius: 8px;
+  }
 }
 .main-and-shadow .main .header .header__wrapper .header_rightside {
   display: flex;
@@ -241,10 +243,12 @@ img {
     display: none;
   }
 }
+.main-and-shadow .main .header .header__wrapper .header__logo-mobile {
+  display: none;
+}
 @media screen and (max-width: 480px) {
   .main-and-shadow .main .header .header__wrapper .header__logo-mobile {
     display: block;
-    order: 2;
   }
   .main-and-shadow .main .header .header__wrapper .header_rightside {
     order: 1;
@@ -262,6 +266,12 @@ img {
   }
   .main-and-shadow .main .header .header__wrapper .header_rightside {
     align-items: start;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-and-shadow .main .header .header__wrapper {
+    flex-direction: column;
+    max-height: 102px;
   }
 }
 .main-and-shadow .main .header .header__title {
@@ -1071,13 +1081,11 @@ img {
   .header {
     background-image: url(./images/mobile/Symbol.png);
   }
-  .main-and-shadow {
-    max-height: 3364px;
-    width: 100%;
+  .header__logo__mobile {
+    display: flex;
+    order: 2;
   }
   .main-and-shadow .main {
-    max-height: 3344px;
-    width: 100%;
     padding: 0px 0px 60px 0px;
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     display: flex;
@@ -1085,9 +1093,6 @@ img {
     align-items: flex-start;
     padding: 0px 0px 60px;
     gap: 30px;
-  }
-  .main-and-shadow .main .header {
-    max-height: 600px;
   }
   .main-and-shadow .main .header .header__wrapper {
     display: flex;
