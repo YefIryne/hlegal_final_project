@@ -1,3 +1,17 @@
+* {
+    font-family: Montserrat Regular, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family: Montserrat Bold;
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat Regular;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
 .burger__menu {
     min-height: 100vh;
     background: #323264;
@@ -24,6 +38,7 @@
     }
 
     &__link{
+        font-family: Montserrat Bold;
         padding: 7px 112px;
         font-size: 24px;
         font-weight: 700;
@@ -33,6 +48,9 @@
         color: #24A3FF;
         background: #F5F5FA;
         border-radius: 12px;
+    }
+    &__link:active{
+        background: #E6E6F0;
     }
     &__close{
         align-self: flex-end;
