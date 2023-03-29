@@ -1158,9 +1158,6 @@ img {
     align-self: stretch;
     flex-grow: 1;
   }
-  .footer__wrapper-privacy {
-    display: none;
-  }
 }
 @media screen and (max-width: 480px) {
   .main {
@@ -1172,18 +1169,24 @@ img {
     padding: 0px 0px 60px;
     gap: 30px;
   }
+  .consistent {
+    width: 100%;
+  }
   .consistent__wrapper {
     padding-left: 30px;
     padding-right: 30px;
-    width: 315px;
+    width: 100%;
   }
   .services__title__block__title {
     font-size: 30px;
   }
   .team__block {
     width: 315px;
-    max-height: 1087px;
+    max-height: 1139px;
     flex-direction: column;
+  }
+  .team__block__blockquote__figcaption {
+    margin-bottom: 30px;
   }
   .recomended {
     display: flex;
@@ -1257,7 +1260,6 @@ img {
   justify-content: space-between;
   align-items: flex-start;
   padding: 50px 60px 0px;
-  gap: 381px;
   width: 100%;
 }
 .main-and-shadow-services .main-services .header-services .header__logo-services {
@@ -1359,6 +1361,32 @@ img {
   border-bottom: 2px solid #F0145A;
   padding-bottom: 3px;
 }
+.main-and-shadow-services .main-services .header-services .header__logo-tabletSD-services {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .main-and-shadow-services .main-services .header-services .header__logo-tabletSD-services {
+    display: flex;
+    gap: 4px;
+  }
+  .main-and-shadow-services .main-services .header-services .header__logo-tabletSD-services .header__logo__link {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+  .main-and-shadow-services .main-services .header-services .header__logo-services {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-and-shadow-services .main-services .header-services .header_rightside-services {
+    align-items: start;
+  }
+}
+.main-and-shadow-services .main-services .header-mobile-services {
+  display: none;
+}
 .main-and-shadow-services .services-services {
   display: flex;
   flex-direction: column;
@@ -1448,11 +1476,6 @@ img {
 @media screen and (max-width: 1920px) {
   .services__container__item-services {
     max-width: 493.33px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .services__container__item-services {
-    width: 261.33px;
   }
 }
 @media screen and (max-width: 768px) {
