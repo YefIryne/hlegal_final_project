@@ -1,5 +1,10 @@
 html {
   scroll-behavior: smooth;
+  width: 100%;
+}
+
+body {
+  width: 100%;
 }
 
 * {
@@ -752,7 +757,7 @@ img {
 
 .labels {
   padding-top: 60px;
-  width: 100%;
+  max-width: 1720px;
 }
 .labels .labels__wrapper {
   display: flex;
@@ -773,38 +778,36 @@ img {
 .labels .labels__wrapper .labels__icons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  width: 100%;
 }
 .labels .labels__wrapper .labels__icons .labels__icons__box {
   height: 120px;
-  width: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: stretch;
 }
 .labels .labels__wrapper .labels__icons .labels__icons__box .labels__icons__box img {
   height: 95px;
   max-width: 217px;
 }
 @media screen and (max-width: 1200px) {
-  .labels .labels__wrapper .labels__icons .labels__icons__box {
-    width: 256px;
+  .labels .labels__wrapper .labels__icons .labels__icons__box img {
+    max-width: 199px;
+    padding: 25px 35px;
   }
+}
+@media screen and (max-width: 1024px) {
   .labels .labels__wrapper .labels__icons .labels__icons__box img {
     max-width: 199px;
   }
 }
 @media screen and (max-width: 768px) {
-  .labels .labels__wrapper .labels__icons .labels__icons__box {
-    width: 256px;
-  }
   .labels .labels__wrapper .labels__icons .labels__icons__box img {
     max-width: 199px;
   }
 }
 @media screen and (max-width: 480px) {
-  .labels .labels__wrapper .labels__icons .labels__icons__box {
-    width: 375px;
-  }
   .labels .labels__wrapper .labels__icons .labels__icons__box img {
     max-width: 199px;
   }
@@ -858,7 +861,7 @@ img {
 
 .recomended {
   background: #F5F5FA;
-  width: 100%;
+  max-width: 1600px;
 }
 .recomended .recomended__wrapper {
   display: flex;
@@ -888,6 +891,7 @@ img {
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
+  width: 100%;
 }
 .recomended .recomended__items .recomended__items__wrapper {
   display: flex;
@@ -987,12 +991,6 @@ img {
   .recomended .recomended__items .recomended__items__wrapper .recomended__item {
     width: 281.33px;
     height: 556px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .recomended .recomended__items .recomended__items__wrapper .recomended__item {
-    width: 309px;
-    height: 514px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1118,6 +1116,9 @@ img {
   .labels .labels__wrapper {
     border-radius: 12px;
   }
+  .labels__icons__box img {
+    padding: 35px 75px;
+  }
   .recomended__item {
     max-width: 513.33px;
   }
@@ -1144,13 +1145,11 @@ img {
     flex-direction: column;
   }
   .recomended__items__wrapper {
-    max-width: 648px;
-    min-height: 932px;
     flex-wrap: wrap;
   }
   .recomended__item {
-    max-width: 309px;
-    max-height: 514px;
+    width: 309px;
+    height: 514px;
   }
   .recomended__item-last {
     max-width: 648px;
